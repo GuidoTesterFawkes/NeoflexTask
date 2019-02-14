@@ -16,7 +16,7 @@ public abstract class AccountInfo{
      * @returns found AccountInfo instance or a newly created one
     */
     public static AccountInfo instance(){
-        return (_accountInfo==null)?(_accountInfo=new AccountInfoMock()):_accountInfo;
+        return (_accountInfo==null)?(_accountInfo=new PropsAccountInfo()):_accountInfo;
     }
 }
 
